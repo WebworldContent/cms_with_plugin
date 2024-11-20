@@ -54,9 +54,8 @@ export default function Blog() {
               />)}
               <div className="p-6">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">{blog.title}</h2>
-                <p className="text-gray-600 mb-4">{blog.content.length > 100 ? blog.content.slice(100) : blog.content}</p>
                 <a
-                  href={`/blog/${blog.slug}`}
+                  href={`/blogs/${blog.slug}`}
                   className="inline-block bg-blue-500 text-white text-sm font-medium py-2 px-4 rounded hover:bg-blue-600"
                 >
                   Read More

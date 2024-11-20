@@ -16,7 +16,6 @@ export async function GET() {
 
 export async function POST(request) {
     try {
-
         const req = await request.json();
         const {title, slug, content} = req;
 
