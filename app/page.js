@@ -2,15 +2,7 @@
 
 import Link from "next/link"
 
-// import { useState } from 'react'
-// import { Dialog, DialogPanel } from '@headlessui/react'
-// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-// import Image from 'next/image'
-
-
 export default function Home() {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="bg-cover bg-center bg-custom-back min-h-screen">
       <div className="relative isolate px-6 pt-14 lg:px-8">

@@ -4,14 +4,19 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation'
 import TinyEditor from './editor';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { previewBlog } from '@/app/store/previewSlice';
 
 export const Postpage = () => {
   const [title, setTitle] = useState('');
   const [slug, setSlug] = useState('');
   const [content, setContent] = useState('');
   const router = useRouter();
+  const blogDispatch = useDispatch()
 
   console.log(content);
+
+  blogDispatch(previewBlog({ title, content }));
 
   // Function to generate slug from title
   const handleTitleChange = (e) => {
