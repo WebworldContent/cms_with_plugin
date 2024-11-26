@@ -36,7 +36,7 @@ export default function Blog() {
     <div className="min-h-screen bg-custom-mix py-12">
       <div className="container mx-auto px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Blog</h1>
-        <div className="grid gap-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+        <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1">
           {!loading ? (blogs.map((blog) => (
             <div key={blog.id} className="bg-white rounded-lg shadow-md overflow-hidden">
               {blog.imageUrl ? (<Image
@@ -46,7 +46,7 @@ export default function Blog() {
                 height={250}
                 className="w-full h-48 object-cover"
               />) : (<Image
-                src='https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg'
+                src='https://picsum.photos/500'
                 alt={blog.title}
                 width={400}
                 height={250}
